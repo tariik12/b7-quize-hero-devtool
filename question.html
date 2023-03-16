@@ -20,7 +20,50 @@
           </h2>
           <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>map, filter,forEach and find are all built in array methods in Java-Script. But there have some difference: <br>
+              <code>.map()</code> <br>
+               executes the same code on every element in an array and returns a new array with the updated elements.  <br>
+               Example:
+                <br>
+                <code>
+                  const number = [1, 2, 3, 4, 5];
+                const doubled = number.map(num => num * 2);
+                console.log(doubled)
+               //output: [2, 4, 6, 8, 10]
+                </code>
+                <br><br>
+              <code>.filter()</code> <br>
+               checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.  <br>
+               Example:
+                <br>
+                <code>
+                  const number = [1, 2, 3, 4, 5];
+                  const even = nums.filter(num => num % 2 === 0); //
+                console.log(even)
+               //output:  [2, 4]
+                </code>
+                <br><br>
+              <code>.forEach()</code> <br>
+              is used to execute the same code on every element in an array but does not change the array and it returns undefined. <br>
+               Example:
+                <br>
+                <code>
+                  const number = [1, 2, 3, 4, 5];
+                  number.forEach(num => console.log(num)); 
+               //output:  1, 2, 3, 4, 5
+                </code>
+                <br><br>
+              <code>.find()</code> <br>
+              is used to find the first element in an array that meets a condition and return it.<br>
+               Example:
+                <br>
+                <code>
+                  const number = [1, 2, 3, 4, 5];
+                  const firstEven = number.find(num => num % 2 === 0); // 2 
+                //output: 2
+                </code>
+              </p>
+              
             </div>
           </div>
         </div>
@@ -32,7 +75,15 @@
           </h2>
           <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              <P>
+                <span class="fw-bold">Local Storage, Session Storage , and Cookies</span>  are all ways for websites to store information on the user's browser, but they differ in their storage capacity, lifespan, and accessibility.
+<br><br>
+                <span class="fw-bold">Local Storage</span> is a type of storage that allows websites to store data on the user's device indefinitely, even after the browser window is closed. The amount of data that can be stored in Local Storage is generally much larger than that of Session Storage or Cookies. This data can be accessed by any page on the same website.
+<br><br>
+                <span class="fw-bold">Session Storage</span> is a type of storage that allows websites to store data for the duration of a session, which ends when the user closes the browser window. The amount of data that can be stored in Session Storage is generally smaller than that of Local Storage, but larger than that of Cookies. This data can also be accessed by any page on the same website.
+<br><br>
+                <span class="fw-bold">Cookies </span>are small text files that websites can store on the user's device. The amount of data that can be stored in Cookies is generally smaller than that of both Local Storage and Session Storage. Cookies can have an expiration date set by the website, or they can be set to expire when the user closes the browser window. Cookies can be accessed by any page on the same website, as well as by third-party websites that the user visits
+              </P>
             </div>
           </div>
         </div>
