@@ -72,7 +72,6 @@ const displayQuiz = (data) => {
 </div>`;
   });
 };
-
 // EventListener for quiz submit button
 document.querySelector("#submit").addEventListener("click", () => {
   if (answers.length < 6) {
@@ -106,7 +105,6 @@ document.querySelector("#submit").addEventListener("click", () => {
     grade.status = "Poor";
     grade.color = "text-red-600";
   }
-
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
