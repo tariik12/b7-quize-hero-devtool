@@ -7,123 +7,134 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body class="container">
-    <h1 class="text-center pt-5">4 <span class="text-danger" >Question</span> <span class="text-primary" >Answers.</span></h1>
+    <h1 class="text-center pt-5"><span class="fw-bold">5</span> <span class="text-danger" >Question</span> <span class="text-primary" >Answers.</span></h1>
 
 
-<section>
-    <div class="accordion mt-5" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-              1.  What is difference between map, filter,  forEach and find ?
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-            <div class="accordion-body">
-              <p>map, filter,forEach and find are all built in array methods in Java-Script. But there have some difference: <br>
-              <code>.map()</code> <br>
-               executes the same code on every element in an array and returns a new array with the updated elements.  <br>
-               Example:
-                <br>
-                <code>
-                  const number = [1, 2, 3, 4, 5];
-                const doubled = number.map(num => num * 2);
-                console.log(doubled)
-               //output: [2, 4, 6, 8, 10]
-                </code>
-                <br><br>
-              <code>.filter()</code> <br>
-               checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.  <br>
-               Example:
-                <br>
-                <code>
-                  const number = [1, 2, 3, 4, 5];
-                  const even = nums.filter(num => num % 2 === 0); //
-                console.log(even)
-               //output:  [2, 4]
-                </code>
-                <br><br>
-              <code>.forEach()</code> <br>
-              is used to execute the same code on every element in an array but does not change the array and it returns undefined. <br>
-               Example:
-                <br>
-                <code>
-                  const number = [1, 2, 3, 4, 5];
-                  number.forEach(num => console.log(num)); 
-               //output:  1, 2, 3, 4, 5
-                </code>
-                <br><br>
-              <code>.find()</code> <br>
-              is used to find the first element in an array that meets a condition and return it.<br>
-               Example:
-                <br>
-                <code>
-                  const number = [1, 2, 3, 4, 5];
-                  const firstEven = number.find(num => num % 2 === 0); // 2 
-                //output: 2
-                </code>
-              </p>
-              
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-               2. What is difference between Local Storage, Session Storage and Cookies ?
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-            <div class="accordion-body">
-              <P>
-                <span class="fw-bold">Local Storage, Session Storage , and Cookies</span>  are all ways for websites to store information on the user's browser, but they differ in their storage capacity, lifespan, and accessibility.
-<br><br>
-                <span class="fw-bold">Local Storage</span> is a type of storage that allows websites to store data on the user's device indefinitely, even after the browser window is closed. The amount of data that can be stored in Local Storage is generally much larger than that of Session Storage or Cookies. This data can be accessed by any page on the same website.
-<br><br>
-                <span class="fw-bold">Session Storage</span> is a type of storage that allows websites to store data for the duration of a session, which ends when the user closes the browser window. The amount of data that can be stored in Session Storage is generally smaller than that of Local Storage, but larger than that of Cookies. This data can also be accessed by any page on the same website.
-<br><br>
-                <span class="fw-bold">Cookies </span>are small text files that websites can store on the user's device. The amount of data that can be stored in Cookies is generally smaller than that of both Local Storage and Session Storage. Cookies can have an expiration date set by the website, or they can be set to expire when the user closes the browser window. Cookies can be accessed by any page on the same website, as well as by third-party websites that the user visits
-              </P>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-             3. What is event loop & how dose work the event loop?
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
-             4. What is the function of the quizTimer?
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
-              5. What is the function of the chooseQuiz?
-            </button>
-          </h2>
-          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
+
+<section class="container p-5 m-5">
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          1.  What is difference between map, filter,  forEach and find ?
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><p>map, filter,forEach and find are all built in array methods in Java-Script. But there have some difference: <br>
+          <code>.map()</code> <br>
+           executes the same code on every element in an array and returns a new array with the updated elements.  <br>
+           Example:
+            <br>
+            <code>
+              const number = [1, 2, 3, 4, 5];
+            const doubled = number.map(num => num * 2);
+            console.log(doubled)
+           //output: [2, 4, 6, 8, 10]
+            </code>
+            <br><br>
+          <code>.filter()</code> <br>
+           checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.  <br>
+           Example:
+            <br>
+            <code>
+              const number = [1, 2, 3, 4, 5];
+              const even = nums.filter(num => num % 2 === 0); //
+            console.log(even)
+           //output:  [2, 4]
+            </code>
+            <br><br>
+          <code>.forEach()</code> <br>
+          is used to execute the same code on every element in an array but does not change the array and it returns undefined. <br>
+           Example:
+            <br>
+            <code>
+              const number = [1, 2, 3, 4, 5];
+              number.forEach(num => console.log(num)); 
+           //output:  1, 2, 3, 4, 5
+            </code>
+            <br><br>
+          <code>.find()</code> <br>
+          is used to find the first element in an array that meets a condition and return it.<br>
+           Example:
+            <br>
+            <code>
+              const number = [1, 2, 3, 4, 5];
+              const firstEven = number.find(num => num % 2 === 0); // 2 
+            //output: 2
+            </code>
+          </p></div>
       </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          2. What is difference between Local Storage, Session Storage and Cookies ?
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><P>
+          <span class="fw-bold">Local Storage, Session Storage , and Cookies</span>  are all ways for websites to store information on the user's browser, but they differ in their storage capacity, lifespan, and accessibility.
+<br><br>
+          <span class="fw-bold">Local Storage</span> is a type of storage that allows websites to store data on the user's device indefinitely, even after the browser window is closed. The amount of data that can be stored in Local Storage is generally much larger than that of Session Storage or Cookies. This data can be accessed by any page on the same website.
+<br><br>
+          <span class="fw-bold">Session Storage</span> is a type of storage that allows websites to store data for the duration of a session, which ends when the user closes the browser window. The amount of data that can be stored in Session Storage is generally smaller than that of Local Storage, but larger than that of Cookies. This data can also be accessed by any page on the same website.
+<br><br>
+          <span class="fw-bold">Cookies </span>are small text files that websites can store on the user's device. The amount of data that can be stored in Cookies is generally smaller than that of both Local Storage and Session Storage. Cookies can have an expiration date set by the website, or they can be set to expire when the user closes the browser window. Cookies can be accessed by any page on the same website, as well as by third-party websites that the user visits
+        </P></div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          3. What is event loop & how does the event loop?
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><strong>The event loop is a key concept in JavaScript that manages the asynchronous execution of code. It is responsible for handling events and executing callback functions when they are ready. <br><br></strong> The event loop is essentially a continuous loop that waits for events to occur and executes the appropriate code when they are ready. When an event occurs, such as a mouse click or a network request, JavaScript registers the event and adds it to a queue of pending events. The event loop continuously checks if there are any events in the queue, and if there are, it processes them one at a time, executing the corresponding code or callbacks. 
+          <br><br>
+          Example:<code>
+            <br><br>
+                console.log(1)
+<br>                add() 
+<br>                console.log(3)
+<br>                console.log(4)
+<br>                console.log(5)
+<br>                console.log(6)
+<br>              function add(){
+            console.log(2)
+          }</code></div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+          4. What is the function of the quizTimer?
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">The <strong>quizTimer</strong> is to implement a timer for a quiz that counts down from a set time and updates the display every second.
+          <br><br>
+                        The <strong>quizTimer</strong> function takes a single parameter, dismiss, which is a boolean value. If dismiss is true, the function stops the timer and clears the interval. If dismiss is false, the function starts the timer by calling setInterval and updating the HTML element with the id count to display the current time.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+          5. What is the function of the chooseQuiz?
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><p>
+          The <strong>chooseQuiz</strong> function is to update the answers array with the given answer for a particular quiz. The function takes two parameters, cod and givenAns, where index is the index of the quiz in the quizData array, and givenAns is the answer given by the user for that quiz.
+          <br><br>
+        
+        The function first checks if an answer already exists for the quiz with the given index. If an answer exists, it updates the answer with the new given answer. If an answer does not exist, it adds a new object to the answers array, which includes the quiz data and the given answer.
+        <br><br>
+        After updating the answers array, the function calls the displayAnswers function and to display the updated answers to the user.
+        </p></div>
+      </div>
+    </div>
+  </div>
 </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
